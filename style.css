@@ -1,0 +1,58 @@
+@font-face { font-family:Dracula; src: url("/fonts/dracula.TTF"); }
+
+
+.HangItUp{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("images/background.png");
+    background-size: cover;
+}
+
+.Title{
+border: solid red;
+grid-column: 1;
+grid-row: 1;
+font-family: Dracula;
+font-size: 100px;
+text-align: center;
+/* padding-top: 20px; */
+color: rgb(0, 0, 0);
+-webkit-text-stroke: 2px white;
+margin: 0;
+}
+/* h1 #it{
+    color:black;
+
+} */
+
+.HangMan{
+border: solid blue;
+grid-column: 1;
+grid-row: 2;
+
+}
+
+.Alphabet{
+border: solid green;
+grid-column: 1;
+grid-row: 3;
+
+}
+
+.Question{
+border: solid yellow;
+grid-column: 1;
+grid-row: 4;
+}
+
+.Answer{
+border: solid orange;
+grid-column: 1;
+grid-row: 5;
+text-align: center;
+font-size: 100px;
+/* padding-top: 120px; */
+}
