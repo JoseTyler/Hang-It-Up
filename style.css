@@ -1,19 +1,28 @@
 @font-face { font-family:Dracula; src: url("/fonts/dracula.TTF"); }
 
+.LandPage{
+    background-image: url("images/LandingPage.gif");
+    background-size: cover;
+
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
 
 .HangItUp{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
     height: 100vh;
     width: 100vw;
-    background-image: url("images/Wallpaper2.png");
+    background-image: url("images/Background.png");
     background-size: cover;
     grid-template-rows: 15% auto;
 }
 
 .Title{
-/* border: solid red; */
+border: solid red;
 grid-column: span 2;
 grid-row: 1;
 font-family: Dracula;
@@ -26,7 +35,7 @@ margin: 0;
 }
 
 .HangMan{
-/* border: solid blue; */
+border: solid blue;
 grid-column: 2;
 grid-row: 2/5;
 text-align: center;
@@ -34,7 +43,7 @@ font-size: 50px;
 }
 
 .Alphabet{
-/* border: solid green; */
+border: solid green;
 grid-column: 1;
 grid-row: 2;
 text-align: center;
@@ -42,7 +51,7 @@ font-size: 50px;
 }
 
 .Question{
-/* border: solid yellow; */
+border: solid yellow;
 grid-column: 1;
 grid-row: 3;
 text-align: center;
@@ -50,7 +59,7 @@ font-size: 50px;
 }
 
 .Answer{
-/* border: solid orange; */
+border: solid orange;
 grid-column: 1;
 grid-row: 4;
 text-align: center;
