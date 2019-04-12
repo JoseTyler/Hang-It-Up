@@ -1,14 +1,36 @@
 @font-face { font-family:Dracula; src: url("/fonts/dracula.TTF"); }
 
-.LandPage{
-    background-image: url("images/LandingPage.gif");
-    background-size: cover;
+/* LANDING PAGE */
 
+.LandPage{
+    background-image: url("../images/LandingPage.gif");
+    background-size: cover;
+}
+
+.start{
+    border: solid black;
+    position: absolute;
+    right: 30%;
+    bottom: 40%;
+    height: 250px;
+    width: 200px;
+    border-radius: 80px;
+    overflow: hidden;
+    /* width: 20px; */
+
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* INTRO PAGE */
+.intro{
+    margin: 0;
 }
 
 
 /* ----------------------------------------------------------------------------- */
 
+/* HANG MAN PAGE */
 
 .HangItUp{
     display: grid;
@@ -16,7 +38,7 @@
     grid-template-rows: 1fr, 1fr, 1fr, 1fr;
     height: 100vh;
     width: 100vw;
-    background-image: url("images/Background.png");
+    background-image: url("../images/Background.png");
     background-size: cover;
     grid-template-rows: 15% auto;
 }
