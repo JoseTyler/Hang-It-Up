@@ -11,11 +11,12 @@
     border: solid black;
     position: absolute;
     right: 30%;
-    bottom: 40%;
+    bottom: 43%;
     height: 250px;
     width: 200px;
     border-radius: 80px;
-    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
     /* width: 20px; */
 
 }
@@ -64,24 +65,29 @@ text-align: center;
 font-size: 50px;
 }
 
-.Alphabet{
-border: solid green;
-grid-column: 1;
-grid-row: 2;
-text-align: center;
-font-size: 50px;
-}
-
 .Question{
 border: solid yellow;
+grid-column: 1;
+grid-row: 2;
+padding-top: 70px;
+text-align: center;
+font-size: 50px;
+color: white;
+}
+
+.Alphabet{
+border: solid green;
 grid-column: 1;
 grid-row: 3;
 text-align: center;
 font-size: 50px;
+color: white;
 }
 
 .Answer{
 border: solid orange;
+color: white;
+padding-top: 120px;
 grid-column: 1;
 grid-row: 4;
 text-align: center;
