@@ -23,7 +23,7 @@ let build = (i, alpha) => {
 
         letters.map((letter, a) => {
             console.log("in letters function")
-            $(`<div style='grid-column:${a + 1}'> ${letter}</div>`).appendTo(`.Word${i}`)
+            $(`<div class='indivletters'style='grid-column:${a + 1}'> ${letter}</div>`).appendTo(`.Word${i}`)
 
         })
         // currentWord.append(wordMaker)
@@ -41,7 +41,7 @@ let build = (i, alpha) => {
 
 
         if (a % 2 == 0) {
-            $(`<button style='grid-row:${1}'> ${letter}</button>`).appendTo('#Letters')
+            $(`<button class="letterButtons" style='grid-row:${1}'> ${letter}</button>`).appendTo('#Letters')
         } else {
             $(`<button style='grid-row:${2}'> ${letter}</button>`).appendTo('#Letters')
         }
