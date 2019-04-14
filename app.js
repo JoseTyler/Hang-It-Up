@@ -9,18 +9,26 @@ function intro() {
 letterBeingChecked = (letterClicked ) => {
     console.log("clicked")
     console.log(letterClicked)
-    for(let i = 0; i < domArr.length;i++){
-        
+    let wereAnyLettersThere = 0
+    for(let i = 0; i < domArr.length;i++){  
+       
         if(domArr[i].name === letterClicked){
             $(`.${letterClicked}`).removeClass('red')
             console.log("equal")
-        }else{
-        console.log("not in here")
+            wereAnyLettersThere += 1
+            // ADD A HIDE TO CLICKED LETTER!!
         }
+        
+    } 
+    if(wereAnyLettersThere === 0){
+        // point to go down,,, show a thing 
+        gameLogic.userLives-=1
+        console.log(gameLogic.userLives)
+        document.getElementById('points').innerHTML = gameLogic.userLives
+       
 
+        //if userLives === 0 do the you lose screen 
     }
-    
-
 }
 
 domArr = []
@@ -67,6 +75,7 @@ let gameLogic = {
         this.userLives = 6
         this.pInPlay = gameLogic.phrase[0]
         this.inPlayAplha = gameLogic.alpha
+        // take out the alphabet builder?? 
         build(pInPlay, inPlayAplha)
     },
 

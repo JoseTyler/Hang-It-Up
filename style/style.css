@@ -46,7 +46,7 @@
 
 .Title{
 border: solid red;
-grid-column: span 2;
+grid-column: span 1;
 grid-row: 1;
 font-family: Dracula;
 font-size: 100px;
@@ -55,7 +55,21 @@ padding-top: 10px;
 color: rgba(0, 0, 0, .7);
 -webkit-text-stroke: 2px white;
 margin: 0;
+
 }
+.points{
+    border: solid red;
+    grid-column: span 1;
+    grid-row: 1;
+    font-family: Dracula;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, .7);
+    -webkit-text-stroke: 2px white;
+    margin: 0;
+    
+    }
 
 .HangMan{
 border: solid blue;
