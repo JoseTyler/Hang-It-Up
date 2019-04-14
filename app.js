@@ -9,10 +9,19 @@ function intro() {
 letterBeingChecked = (letterClicked ) => {
     console.log("clicked")
     console.log(letterClicked)
+    for(let i = 0; i < domArr.length;i++){
+        
+        if(domArr[i].name === letterClicked){
+            $(`.${letterClicked}`).removeClass('red')
+            console.log("equal")
+        }else{
+        console.log("not in here")
+        }
+
+    }
+    
 
 }
-
-
 
 domArr = []
 let build = (i, alpha) => {
@@ -27,6 +36,7 @@ let build = (i, alpha) => {
 
     words.map((word, i) => {
         letters = word.split('')
+        
         $(`<div class='Word${i}' style='display:grid'></div>`).appendTo('#Answer')
         // wordMaker.addClass('test')
         currentWord = document.createElement("div")
@@ -34,7 +44,7 @@ let build = (i, alpha) => {
         letters.map((letter, a) => {
             letter = letter.toLowerCase()
             console.log("in letters function")
-            $(`<input class='${letter}'style='grid-column:${a + 1}' placeholder='${letter}' value='${letter}'>`).appendTo(`.Word${i}`)
+            $(`<input class='${letter} red' style='grid-column:${a + 1}' placeholder='${letter}' value='${letter}'>`).appendTo(`.Word${i}`)
             domArr.push({ name: `${letter}` })
         })
 
@@ -75,7 +85,7 @@ let gameFunc = {
 }
 
 gameLogic.start()
-console.log(domArr)
+// console.log(domArr)
 
 
 

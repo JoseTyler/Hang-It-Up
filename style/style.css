@@ -92,7 +92,7 @@ grid-template-columns:13
 #Answer{
 border: solid orange;
 font-family: Dracula;
-color: white;
+/* color: white; */
 padding-top: 60px;
 grid-column: 1;
 grid-row: 4;
