@@ -14,6 +14,7 @@ let build = (i, alpha) => {
     aArea = document.getElementById('Answer')
 
     words = i.answer.split(" ")
+    domArr =[]
 
     words.map((word, i) => {
         letters = word.split('')
@@ -22,9 +23,10 @@ let build = (i, alpha) => {
         currentWord = document.createElement("div")
 
         letters.map((letter, a) => {
+            
             console.log("in letters function")
-            $(`<div class='indivletters'style='grid-column:${a + 1}'> ${letter}</div>`).appendTo(`.Word${i}`)
-
+            $(`<div class='${letter}'style='grid-column:${a + 1}'> ${letter}</div>`).appendTo(`.Word${i}`)
+            domArr.push()
         })
         // currentWord.append(wordMaker)
         // aArea.append(currentWord)
@@ -54,9 +56,11 @@ let build = (i, alpha) => {
 let gameLogic = {
     alpha: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
     inPlayAplha: [],
+    answerArray: [],
     userLives: 6,
-    phrase: [{ question: "What does everybody have in common", answer: "They all float" }],
+    phrase: [{ question: "What does everybody have in common?", answer: "They all float" }],
     pInPlay: {},
+    
     start: () => {
         this.userLives = 6
         this.pInPlay = gameLogic.phrase[0]
@@ -65,7 +69,9 @@ let gameLogic = {
     },
 
 }
-
+// let gameFunction = {
+//     answerArray = gameLogic.
+// }
 
 
 gameLogic.start()
