@@ -4,12 +4,30 @@ function intro() {
 }
 
 let build = (i) => {
+    words = []
     qArea = document.getElementById('Question')
     console.log(i)
     qArea.innerHTML = i.question
 
     aArea = document.getElementById('Answer')
-    aArea.innerHTML = i.answer
+
+    words = i.answer.split(" ")
+    
+    words.map((word)=>{
+        letters = word.split('')
+        wordMaker =document.createElement("div")
+
+    letters.map((letter)=>{
+        let nextItem = document.createElement("div")
+        nextItem.append(letter)
+        wordMaker.append(nextItem)
+    })
+
+    aArea.append(wordMaker)
+
+    })
+
+
 
 }
 let gameLogic = {
