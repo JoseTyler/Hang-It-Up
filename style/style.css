@@ -75,8 +75,9 @@ font-size: 50px;
 color: white;
 }
 
-.Alphabet{
+#Letters{
 border: solid green;
+font-family: Dracula;
 grid-column: 1;
 grid-row: 3;
 text-align: center;

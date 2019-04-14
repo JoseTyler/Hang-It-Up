@@ -2,14 +2,13 @@ function intro(){
     location.replace("../pages/intro.html")
 }
 
-var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l',
-                'm','n','o','p','q','r','s','t','u','v','w','x','y','z']
-
-
-
-function correctLetter(){
-    if(Answer)
-
-
-
+let gameLogic={ 
+    userLives: 6,
+    phrase:[{question: "What does everybody have in common", answer: "They all float"}],
+    pInPlay:"",
+    start: ()=>{
+        this.userLives = 6
+        this.pInPlay = this.phrase[0]
+    },
 }
+
