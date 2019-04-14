@@ -106,3 +106,8 @@ font-size: 50px;
     display:grid;
     grid-column: 4;
 }
+
+.red{
+    color: red;
+    background: red
+}
