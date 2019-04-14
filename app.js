@@ -1,14 +1,30 @@
-function intro(){
+function intro() {
     location.replace("../pages/intro.html")
+    gameLogic.start()
 }
 
-let gameLogic={ 
+let build = (i) => {
+    qArea = document.getElementById('Question')
+    console.log(i)
+    qArea.innerHTML = i.question
+
+    aArea = document.getElementById('Answer')
+    aArea.innerHTML = i.answer
+
+}
+let gameLogic = {
     userLives: 6,
-    phrase:[{question: "What does everybody have in common", answer: "They all float"}],
-    pInPlay:"",
-    start: ()=>{
+    phrase: [{ question: "What does everybody have in common", answer: "They all float" }],
+    pInPlay: {},
+    start: () => {
         this.userLives = 6
-        this.pInPlay = this.phrase[0]
+
+        this.pInPlay = gameLogic.phrase[0]
+        build(pInPlay)
     },
+
 }
 
+
+
+gameLogic.start()
