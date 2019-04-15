@@ -1,16 +1,24 @@
 # Project_1
 
 I decided to do the "Hang Man" game with a little twist.
-
 I will use Penny Wise from "IT" as the character being hung.
 
-The title font shown is downloaded from DaFont.com with the font title of "Dracula".
+The fonts shown are downloaded from DaFont.com.
+Images are provided from google images.
+I deployed my site on Netlify.com (Here is my link)
 
 I will have a landing page with a start button that will trigger a intro video leading to the game.
+Once the video is done playing, the gamepage will load on click and the player can start playing game.
+The player will have 6 tries to guess the correct phrase.
 
-Once the video is done playing, the gamepage will load and the player can start playing game.
+If the player guesses wrong, a life will be taken away.
+If the player guesses right, the letters in the answer will populate.
 
-They player will have 6 tries to guess the correct phrase. If so 
+
+
+
+
+
 
 
 
