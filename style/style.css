@@ -57,19 +57,19 @@ color: rgba(0, 0, 0, .7);
 margin: 0;
 
 }
+
 .points{
-    border: solid red;
-    grid-column: span 1;
-    grid-row: 1;
-    font-family: Dracula;
-    font-size: 100px;
-    text-align: center;
-    padding-top: 10px;
-    color: rgba(0, 0, 0, .7);
-    -webkit-text-stroke: 2px white;
-    margin: 0;
-    
-    }
+border: solid red;
+grid-column: span 1;
+grid-row: 1;
+font-family: Dracula;
+font-size: 100px;
+text-align: center;
+padding-top: 10px;
+color: rgba(0, 0, 0, .7);
+-webkit-text-stroke: 2px white;
+margin: 0;    
+}
 
 .HangMan{
 border: solid blue;
@@ -78,26 +78,31 @@ grid-row: 2/5;
 text-align: center;
 font-size: 50px;
 }
+
 .five{
-    background-image: url(/images/Attempt1.png);
-    background-size: cover;
-    /* background: no-repeat; */
+    background-image: url(/images/Attempt1.png); 
 }
+
 .four{
     background-image: url(/images/Attempt2.png)
 }
+
 .three{
     background-image: url(/images/Attempt3.png)
 }
+
 .two{
     background-image: url(/images/Attempt4.png)
 }
+
 .one{
     background-image: url(/images/Attempt5.png)
 }
+
 .zero{
     background-image: url(/images/Attempt6.png)
 }
+
 
 #Question{
 border: solid yellow;
@@ -118,9 +123,16 @@ grid-row: 3;
 text-align: center;
 font-size: 50px;
 color: white;
-display:grid;
+/* display:grid;
 grid-template-rows:2;
-grid-template-columns:13
+grid-template-columns:13 */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+
+ 
+
 }
 
 #Answer{

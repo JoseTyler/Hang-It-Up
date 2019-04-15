@@ -2,6 +2,8 @@ function intro() {
     location.replace("../pages/intro.html")
     gameLogic.start()
 }
+
+
 //     // if letterCicked = a letter in answer then disappear 
 //     // else take away a life
 
