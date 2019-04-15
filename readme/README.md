@@ -5,7 +5,8 @@ I will use Penny Wise from "IT" as the character being hung.
 
 The fonts shown are downloaded from DaFont.com.
 Images are provided from google images.
-I deployed my site on Netlify.com (Here is my link)
+I deployed my site on Netlify.com (Here is my link "https://stoic-fermi-9b54b0.netlify.com")
+My Project Board Link (https://trello.com/b/oPvbzG2Q/project-1)
 
 I will have a landing page with a start button that will trigger a intro video leading to the game.
 Once the video is done playing, the gamepage will load on click and the player can start playing game.

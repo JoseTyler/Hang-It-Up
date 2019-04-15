@@ -83,43 +83,6 @@
     font-size: 50px;
 }
 
-.five {
-    background-image: url(/images/Attempt1.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 63% 90%;
-}
-
-.four {
-    background-image: url(/images/Attempt2.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
-.three {
-    background-image: url(/images/Attempt3.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
-.two {
-    background-image: url(/images/Attempt4.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
-.one {
-    background-image: url(/images/Attempt5.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
-.zero {
-    background-image: url(/images/Attempt6.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
 #Question {
     /* border: solid yellow; */
     font-family: Hogan;
@@ -179,6 +142,41 @@
 
 .hide {
     visibility: hidden;
-    /* color: rgba(0, 0, 0, 0) ;
-    /* color: black; */
+}
+
+.five {
+    background-image: url(/images/Attempt1.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 63% 90%;
+}
+
+.four {
+    background-image: url(/images/Attempt2.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.three {
+    background-image: url(/images/Attempt3.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.two {
+    background-image: url(/images/Attempt4.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.one {
+    background-image: url(/images/Attempt5.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.zero {
+    background-image: url(/images/Attempt6.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
 }
