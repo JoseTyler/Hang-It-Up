@@ -1,4 +1,4 @@
-//restarts game refresh takes away all the divs in answer
+//Restarts game refresh takes away all the divs in answer
 function refreshPage(){
     document.location.reload(true)
 }
@@ -12,7 +12,7 @@ function startBstart() {
     gameLogic.start()
 }
 
-// Holds all starter logic and start function
+// Holds all starter logic and the start function
 let gameLogic = {
     alpha: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
     inPlayAlpha: [],
@@ -27,9 +27,8 @@ let gameLogic = {
         this.pInPlay = gameLogic.phrase[0]
         this.inPlayAlpha = gameLogic.alpha
         build(pInPlay, inPlayAlpha)
-    },
+    }
 }
-
 
 // Building questions and answers for players to guess
 let domArr = []

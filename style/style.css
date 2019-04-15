@@ -1,13 +1,20 @@
-@font-face { font-family:Dracula; src: url("/fonts/dracula.TTF"); }
+/* Fonts used in the game */
 
-/* LANDING PAGE */
+@font-face {
+    font-family: Dracula;
+    src: url("/fonts/dracula.TTF");
+    font-family: Hogan;
+    src: url("/fonts/HoganMania.ttf");
+}
 
-.LandPage{
+/* Landing Page */
+
+.LandPage {
     background-image: url("../images/LandingPage.gif");
     background-size: cover;
 }
 
-.start{
+.start {
     border: solid black;
     position: absolute;
     right: 30%;
@@ -18,25 +25,24 @@
     opacity: 0;
     cursor: pointer;
     /* width: 20px; */
-
 }
 
 /* ----------------------------------------------------------------------------- */
 
-/* INTRO PAGE */
-.intro{
+/* Intro Page */
+
+.intro {
     margin: 0;
 }
 
-
 /* ----------------------------------------------------------------------------- */
 
-/* HANG MAN PAGE */
+/* HangMan Page */
 
-.HangItUp{
+.HangItUp {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
     height: 100vh;
     width: 100vw;
     background-image: url("../images/Background.png");
@@ -44,148 +50,137 @@
     grid-template-rows: 15% auto;
 }
 
-.Title{
-border: solid red;
-grid-column: span 1;
-grid-row: 1;
-font-family: Dracula;
-font-size: 100px;
-text-align: center;
-padding-top: 10px;
-color: rgba(0, 0, 0, .7);
--webkit-text-stroke: 2px white;
-margin: 0;
-
+.Title {
+    /* border: solid red; */
+    grid-column: span 2;
+    grid-row: 1;
+    font-family: Dracula;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, .7);
+    -webkit-text-stroke: 2px white;
+    margin: 0;
 }
 
-.points{
-border: solid red;
-grid-column: span 1;
-grid-row: 1;
-font-family: Dracula;
-font-size: 100px;
-text-align: center;
-padding-top: 10px;
-color: rgba(0, 0, 0, .7);
--webkit-text-stroke: 2px white;
-margin: 0;    
+.points {
+    /* border: solid red; */
+    grid-column: 1;
+    grid-row: 4;
+    font-family: Dracula;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, .7);
+    -webkit-text-stroke: 2px white;
+    margin: 0;
 }
 
-.HangMan{
-border: solid blue;
-grid-column: 2;
-grid-row: 2/5;
-text-align: center;
-font-size: 50px;
+.HangMan {
+    /* border: solid blue; */
+    grid-column: 2;
+    grid-row: 2/6;
+    text-align: center;
+    font-size: 50px;
 }
 
-.five{
-    background-image: url(/images/Attempt1.png); 
+.five {
+    background-image: url(/images/Attempt1.png);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 63% 90%;
-    
 }
 
-.four{
+.four {
     background-image: url(/images/Attempt2.png);
     background-repeat: no-repeat;
     background-size: 50%;
 }
 
-.three{
+.three {
     background-image: url(/images/Attempt3.png);
     background-repeat: no-repeat;
     background-size: 50%;
 }
 
-.two{
+.two {
     background-image: url(/images/Attempt4.png);
     background-repeat: no-repeat;
     background-size: 50%;
 }
 
-.one{
+.one {
     background-image: url(/images/Attempt5.png);
     background-repeat: no-repeat;
     background-size: 50%;
 }
 
-.zero{
+.zero {
     background-image: url(/images/Attempt6.png);
     background-repeat: no-repeat;
     background-size: 50%;
 }
 
-
-#Question{
-border: solid yellow;
-font-family: Dracula;
-grid-column: 1;
-grid-row: 2;
-padding: 20px 20px 20px 20px;
-text-align: center;
-font-size: 50px;
-color: white;
+#Question {
+    /* border: solid yellow; */
+    font-family: Hogan;
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 100px;
+    color: rgb(177, 20, 20);
+    -webkit-text-stroke: 2px white;
 }
 
-#Letters{
-border: solid green;
-font-family: Dracula;
-grid-column: 1;
-grid-row: 3;
-text-align: center;
-font-size: 50px;
-color: white;
-display:flex;
-flex-direction: column;
-
+#Letters {
+    /* border: solid green; */
+    font-family: Dracula;
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-#row1{
+#row1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
-    
+    padding-bottom: 20px;
 }
 
-#row2{
+#row2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
-
-
+    padding-top: 20px;
 }
 
-#Answer{
-border: solid orange;
-font-family: Dracula;
-/* color: white; */
-padding-top: 60px;
-grid-column: 1;
-grid-row: 4;
-text-align: center;
-font-size: 50px;
-/* padding-top: 120px; */
+#Answer {
+    /* border: solid orange; */
+    font-family: Dracula;
+    /* color: white; */
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    font-size: 50px;
 }
 
 
-.test{
-    display:grid;
-    grid-column: 4;
+.red {
+    color:rgb(177, 20, 20);
+    background:rgb(177, 20, 20);
 }
 
-.red{
-    color: red;
-    background: red;
+.hide {
+    visibility: hidden; 
+    /* color: rgba(0, 0, 0, 0) ;
+    /* color: black; */
 }
-
-.hide{
-    /* visibility: hidden; */
-    /* color: rgba(0, 0, 0, 0) ; */
-    color: black;
-} 
