@@ -78,6 +78,26 @@ grid-row: 2/5;
 text-align: center;
 font-size: 50px;
 }
+.five{
+    background-image: url(/images/Attempt1.png);
+    background-size: cover;
+    /* background: no-repeat; */
+}
+.four{
+    background-image: url(/images/Attempt2.png)
+}
+.three{
+    background-image: url(/images/Attempt3.png)
+}
+.two{
+    background-image: url(/images/Attempt4.png)
+}
+.one{
+    background-image: url(/images/Attempt5.png)
+}
+.zero{
+    background-image: url(/images/Attempt6.png)
+}
 
 #Question{
 border: solid yellow;
@@ -123,5 +143,11 @@ font-size: 50px;
 
 .red{
     color: red;
-    background: red
+    background: red;
 }
+
+.hide{
+    /* visibility: hidden; */
+    /* color: rgba(0, 0, 0, 0) ; */
+    color: black;
+} 
