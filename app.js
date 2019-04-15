@@ -5,8 +5,6 @@ function intro() {
 
 letterBeingChecked = (letterClicked) => {
     letterClicked + letterClicked
-    // document.getElementById(letterClicked).style.color =  "rgba(0, 0, 0, 0)"
-    // var boxName = 
     $(`.${letterClicked + letterClicked}`).addClass("hide")
     let wereAnyLettersThere = 0
     for (let i = 0; i < domArr.length; i++) {
@@ -111,10 +109,3 @@ let gameFunc = {
 
 gameLogic.start()
 // console.log(domArr)
-
-
-
-
-
-
-
