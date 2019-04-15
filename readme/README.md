@@ -14,6 +14,8 @@ The player will have 6 tries to guess the correct phrase.
 
 If the player guesses wrong, a life will be taken away.
 If the player guesses right, the letters in the answer will populate.
+[WIREFRAME](./Wireframe.JPG)
+[WHITEBOARD](./Whiteboarding.JPG)
 
 Everything seems to work as planned.
 
