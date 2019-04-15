@@ -137,13 +137,27 @@ grid-row: 3;
 text-align: center;
 font-size: 50px;
 color: white;
-/* display:grid;
-grid-template-rows:2;
-grid-template-columns:13 */
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-align-items: flex-start;
+display:flex;
+flex-direction: column;
+
+}
+
+#row1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+#row2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
 
 }
 

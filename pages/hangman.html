@@ -8,14 +8,14 @@
     <title>HangMan</title>
     <link rel="stylesheet" href="../style/style.css">
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-    <script src="app.js" defer></script>
+    <script src="../app.js" defer></script>
 </head>
 
-<body class="HangItUp">
+<body onload="startBstart()" class="HangItUp">
     <div class="Title">
         HANG <span style="color:red">IT</span> UP
     </div>
-    <div class='points' id='points'>6</div>
+    <div><div class='points' id='points'>6</div><button onclick="refreshPage()">New Game</button></div> 
     <div class="HangMan">
 
     </div>
@@ -25,37 +25,42 @@
     </div>
 
     <div id="Letters">
-        <div class="aa" onclick="letterBeingChecked('a')"> A</div>
-        <div class="bb" onclick="letterBeingChecked('b')"> B</div>
-        <div class="cc" onclick="letterBeingChecked('c')"> C</div>
-        <div class="dd" onclick="letterBeingChecked('d')"> D</div>
-        <div class="ee" onclick="letterBeingChecked('e')"> E</div>
-        <div class="ff" onclick="letterBeingChecked('f')"> F</div>
-        <div class="gg" onclick="letterBeingChecked('g')"> G</div>
-        <div class="hh" onclick="letterBeingChecked('h')"> H</div>
-        <div class="ii" onclick="letterBeingChecked('i')"> I</div>
-        <div class="jj" onclick="letterBeingChecked('j')"> J</div>
-        <div class="kk" onclick="letterBeingChecked('k')"> K</div>
-        <div class="ll" onclick="letterBeingChecked('l')"> L</div>
-        <div class="mm" onclick="letterBeingChecked('m')"> M</div>
-        <div class="nn" onclick="letterBeingChecked('n')"> N</div>
-        <div class="oo" onclick="letterBeingChecked('o')"> O</div>
-        <div class="pp" onclick="letterBeingChecked('p')"> P</div>
-        <div class="qq" onclick="letterBeingChecked('q')"> Q</div>
-        <div class="rr" onclick="letterBeingChecked('r')"> R</div>
-        <div class="ss" onclick="letterBeingChecked('s')"> S</div>
-        <div class="tt" onclick="letterBeingChecked('t')"> T</div>
-        <div class="uu" onclick="letterBeingChecked('u')"> U</div>
-        <div class="vv" onclick="letterBeingChecked('v')"> V</div>
-        <div class="ww" onclick="letterBeingChecked('w')"> W</div>
-        <div class="xx" onclick="letterBeingChecked('x')"> X</div>
-        <div class="yy" onclick="letterBeingChecked('y')"> Y</div>
-        <div class="zz" onclick="letterBeingChecked('z')"> Z</div>
+        <div id="row1">
+            <div class="aa" onclick="letterBeingChecked('a')"> A</div>
+            <div class="bb" onclick="letterBeingChecked('b')"> B</div>
+            <div class="cc" onclick="letterBeingChecked('c')"> C</div>
+            <div class="dd" onclick="letterBeingChecked('d')"> D</div>
+            <div class="ee" onclick="letterBeingChecked('e')"> E</div>
+            <div class="ff" onclick="letterBeingChecked('f')"> F</div>
+            <div class="gg" onclick="letterBeingChecked('g')"> G</div>
+            <div class="hh" onclick="letterBeingChecked('h')"> H</div>
+            <div class="ii" onclick="letterBeingChecked('i')"> I</div>
+            <div class="jj" onclick="letterBeingChecked('j')"> J</div>
+            <div class="kk" onclick="letterBeingChecked('k')"> K</div>
+            <div class="ll" onclick="letterBeingChecked('l')"> L</div>
+            <div class="mm" onclick="letterBeingChecked('m')"> M</div>
+        </div>
+        <div id="row2">
+            <div class="nn" onclick="letterBeingChecked('n')"> N</div>
+            <div class="oo" onclick="letterBeingChecked('o')"> O</div>
+            <div class="pp" onclick="letterBeingChecked('p')"> P</div>
+            <div class="qq" onclick="letterBeingChecked('q')"> Q</div>
+            <div class="rr" onclick="letterBeingChecked('r')"> R</div>
+            <div class="ss" onclick="letterBeingChecked('s')"> S</div>
+            <div class="tt" onclick="letterBeingChecked('t')"> T</div>
+            <div class="uu" onclick="letterBeingChecked('u')"> U</div>
+            <div class="vv" onclick="letterBeingChecked('v')"> V</div>
+            <div class="ww" onclick="letterBeingChecked('w')"> W</div>
+            <div class="xx" onclick="letterBeingChecked('x')"> X</div>
+            <div class="yy" onclick="letterBeingChecked('y')"> Y</div>
+            <div class="zz" onclick="letterBeingChecked('z')"> Z</div>
+        </div>
     </div>
 
-    <div id="Answer">
+    <div>
+        <div id="Answer">
 
-    </div>
+        </div>
 
 
 
