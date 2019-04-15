@@ -3,16 +3,11 @@ function intro() {
     gameLogic.start()
 }
 
-
-//     // if letterCicked = a letter in answer then disappear 
-//     // else take away a life
-
-
 letterBeingChecked = (letterClicked) => {
-   letterClicked+letterClicked
+    letterClicked + letterClicked
     // document.getElementById(letterClicked).style.color =  "rgba(0, 0, 0, 0)"
     // var boxName = 
-    $(`.${letterClicked+letterClicked}`).addClass("hide")
+    $(`.${letterClicked + letterClicked}`).addClass("hide")
     let wereAnyLettersThere = 0
     for (let i = 0; i < domArr.length; i++) {
 
@@ -20,42 +15,47 @@ letterBeingChecked = (letterClicked) => {
             $(`.${letterClicked}`).removeClass('red')
             console.log("equal")
             wereAnyLettersThere += 1
-            // ADD A HIDE TO CLICKED LETTER!!
         }
-
     }
+
     if (wereAnyLettersThere > 0) {
         gameLogic.totalLettersRight += wereAnyLettersThere
     }
+
     else if (wereAnyLettersThere === 0) {
-        
+
         gameLogic.userLives -= 1
         console.log(gameLogic.userLives)
         document.getElementById('points').innerHTML = gameLogic.userLives
-
     }
     if (gameLogic.totalLettersRight === 12) {
         document.getElementById('points').innerHTML = "You Win!"
 
     }
-    if(gameLogic.userLives >= 6){
+    if (gameLogic.userLives >= 6) {
         console.log("starting")
     }
+
     else if (gameLogic.userLives === 5) {
         $(".HangMan").addClass("five")
     }
+
     else if (gameLogic.userLives === 4) {
         $(".HangMan").addClass("four")
     }
+
     else if (gameLogic.userLives === 3) {
         $(".HangMan").addClass("three")
     }
+
     else if (gameLogic.userLives === 2) {
         $(".HangMan").addClass("two")
     }
+
     else if (gameLogic.userLives === 1) {
         $(".HangMan").addClass("one")
     }
+
     else {
         $(".HangMan").addClass("zero")
         document.getElementById('points').innerHTML = "You Lose!"
@@ -68,18 +68,13 @@ let build = (i, alpha) => {
     qArea = document.getElementById('Question')
     console.log(i)
     qArea.innerHTML = i.question
-
     aArea = document.getElementById('Answer')
-
     words = i.answer.split(" ")
-
     words.map((word, i) => {
         letters = word.split('')
-
         $(`<div class='Word${i}' style='display:grid'></div>`).appendTo('#Answer')
         // wordMaker.addClass('test')
         currentWord = document.createElement("div")
-
         letters.map((letter, a) => {
             letter = letter.toLowerCase()
             console.log("in letters function")
@@ -87,8 +82,8 @@ let build = (i, alpha) => {
             domArr.push({ name: `${letter}` })
         })
     })
-
 }
+
 let gameLogic = {
     alpha: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
     inPlayAplha: [],
@@ -105,19 +100,13 @@ let gameLogic = {
         // take out the alphabet builder?? 
         build(pInPlay, inPlayAplha)
     },
-
 }
-// let gameFunction = {
-//     answerArray = gameLogic.
-// }
-
 
 let gameFunc = {
     answerArray: [],
     ansArr: () => {
         this.answerArray = gameLogic.pInPlay.answer.split(' ')
     }
-
 }
 
 gameLogic.start()
