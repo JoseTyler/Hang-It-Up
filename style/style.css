@@ -1,12 +1,12 @@
 /* Fonts used in the game */
-
 @font-face {
     font-family: Dracula;
     src: url("/fonts/dracula.ttf");
+}
+@font-face{
     font-family: Hogan;
     src: url("/fonts/HoganMania.ttf");
 }
-
 @font-face {
     font-family: Gaming;
     src: url("/fonts/Gaming.otf");
@@ -33,7 +33,6 @@
 }
 
 /* Intro Page */
-
 .intro {
     margin: 0px;
 }
@@ -46,7 +45,6 @@
 }
 
 /* HangMan Page */
-
 .hangItUp {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -232,7 +230,6 @@ input {
 }
 
 /* iPhone 6,7,8 [Landscape Mode Only] ---------------------------------------------------------------------- */
-
 @media screen and (orientation: landscape) and (max-height: 375px) and (max-width: 667px) {
     .hangItUp {
         grid-template-columns: 65% 35%;
