@@ -1,13 +1,14 @@
-//Restarts game refresh takes away all the divs in answer
+// Restarts game
 function refreshPage() {
     document.location.reload(true)
 }
-// Opens Intro page when balloon is clicked
+
+// Opens 'Intro' page when balloon is clicked
 function intro() {
     location.replace("../pages/intro.html")
 }
 
-// Enables click to skip intro and opens the Hangman page
+// Enables click to skip intro and opens the Hangman game
 function startBstart() {
     gameLogic.start()
 }
@@ -19,7 +20,7 @@ let gameLogic = {
     totalLettersRight: 0,
     answerArray: [],
     userLives: 6,
-    phrase: [{ question: "What does every body have in common?", answer: "They all float" }],
+    phrase: [{ question: "WHAT DOES EVERYBODY </br> HAVE IN COMMON?", answer: "They all float" }],
     pInPlay: {},
 
     start: () => {
@@ -33,16 +34,14 @@ let gameLogic = {
 // Building questions and answers for players to guess
 let domArr = []
 let build = (i, alpha) => {
-
     words = []
-    qArea = document.getElementById('Question')
-
+    qArea = document.getElementById('question')
     qArea.innerHTML = i.question
-    aArea = document.getElementById('Answer')
-    words = i.answer.split(" ")
+    aArea = document.getElementsByClassName('answer')
+    words = i.answer.split(' ')
     words.map((word, i) => {
         letters = word.split('')
-        $(`<div class='Word${i}' style='display:grid'></div>`).appendTo('#Answer')
+        $(`<div class='Word${i}' style='display:grid'></div>`).appendTo('.answer')
         currentWord = document.createElement("div")
         letters.map((letter, a) => {
             letter = letter.toLowerCase()
@@ -53,7 +52,7 @@ let build = (i, alpha) => {
 }
 
 // Logic to check when players click on letters
-// "hide" = turns letters black when clicked
+// "hide" = hides when clicked
 // for loop runs through the answer and reveals if a letter matches with the letter clicked
 letterBeingChecked = (letterClicked) => {
     $(`.${letterClicked + letterClicked}`).addClass("hide")
@@ -71,45 +70,32 @@ letterBeingChecked = (letterClicked) => {
         gameLogic.totalLettersRight += wereAnyLettersThere
     }
     else if (wereAnyLettersThere === 0) {
-
         gameLogic.userLives -= 1
         document.getElementById('points').innerHTML = gameLogic.userLives
     }
     if (gameLogic.totalLettersRight === 12) {
         document.getElementById('points').innerHTML = "You Win!"
-
     }
 
     //Keeps track of lives and updates hangman picture whenever a life is lost
     if (gameLogic.userLives >= 6) {
-
     }
-
     else if (gameLogic.userLives === 5) {
-        $(".HangMan").addClass("five")
+        $(".hangMan").addClass("five")
     }
-
     else if (gameLogic.userLives === 4) {
-        $(".HangMan").addClass("four")
+        $(".hangMan").addClass("four")
     }
-
     else if (gameLogic.userLives === 3) {
-        $(".HangMan").addClass("three")
+        $(".hangMan").addClass("three")
     }
-
     else if (gameLogic.userLives === 2) {
-        $(".HangMan").addClass("two")
+        $(".hangMan").addClass("two")
     }
-
     else if (gameLogic.userLives === 1) {
-        $(".HangMan").addClass("one")
+        $(".hangMan").addClass("one")
     }
-
-    else {
-        $(".HangMan").addClass("zero")
+    else {$(".hangMan").addClass("zero")
         document.getElementById('points').innerHTML = "You Lose!"
     }
 }
-
-// Shows "hint" as an alert
-document.getElementById("hint").addEventListener(onclick);

@@ -11,22 +11,18 @@
     <script src="../script/app.js" defer></script>
 </head>
 
-<body onload="startBstart()" class="HangItUp">
-    <div class="Title">
+<body onload="startBstart()" class="hangItUp">
+    <div class="title">
         HANG <span style="color:rgb(177, 20, 20);">IT</span> UP
     </div>
-    <div>
-        <div class='points' id='points'>6</div>
-    </div>
-    <div class="HangMan">
 
-    </div>
+    <div class='points' id='points'>6</div>
 
-    <div id="Question">
+    <div class="hangMan"></div>
 
-    </div>
+    <div id="question"></div>
 
-    <div id="Letters">
+    <div id="letters">
         <div id="row1">
             <div class="aa" onclick="letterBeingChecked('a')"> A</div>
             <div class="bb" onclick="letterBeingChecked('b')"> B</div>
@@ -58,16 +54,12 @@
             <div class="zz" onclick="letterBeingChecked('z')"> Z</div>
         </div>
     </div>
+    <div class="answer"></div>
 
-    <div>
-        <div id="Answer">
-
-        </div>
-        <button onclick="refreshPage()">New Game</button>
-        <button id="hint" onclick="alert('Stay Out The Water!')">Hint</button>
-
-
-
+    <div class="pushy">
+        <button id="reset" onclick="refreshPage()">RESET</button>
+        <button id="hint" onclick="alert('Stay Out Of The Water!')">HINT</button>
+    </div>
 </body>
 
 </html>
